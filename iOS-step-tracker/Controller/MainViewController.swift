@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  iOS-step-tracker
 //
 //  Created by Liubov Fedorchuk on 10/3/18.
@@ -8,23 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var stepsCountLabel: UILabel!
+    @IBOutlet weak var walkerImageView: UIImageView!
     let alertSetUp = AlertSetUp()
-//    var stepCount = 0
-//    var date = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addImageToUIImageView()
+        self.dateLabel.text = getCurrentDateInReadableFormat()
         if(UserDefaults.standard.bool(forKey: "success") == false) {
             self.authorizeHealthKitWithStepCount()
         } else {
             self.getStepCount()
-//            self.showDataOnView(currentStepCount: self.getStepCount().0,
-//                                currentDate: self.getStepCount().1)
-//            self.saveDataToDB()
         }
     }
 
@@ -51,14 +49,26 @@ class ViewController: UIViewController {
         }
     }
     
+    func getCurrentDateInReadableFormat() -> String {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale(identifier: "en_US")
+        let date = dateFormatter.string(from: now)
+        return date
+    }
+    
     func getStepCount(){
-        let motionManager = MotionManager()
-        motionManager.importStepsHistory(completion: { [weak self] steps, date  in
-            let dbManager = DBManager()
-            dbManager.pasteDataToFirebaseDB(date: date, stepCount: steps)
+        let healthKitManager = HealthKitManager()
+        healthKitManager.getCurrentStepCount(completion: { [weak self] steps, date  in
             self?.stepsCountLabel.text = "\(steps)"
-            self?.dateLabel.text = "\(date)"
         })
+    }
+    
+    func addImageToUIImageView() {
+        let walkerImage: UIImage = UIImage(named: "walker")!
+        walkerImageView.image = walkerImage
     }
 }
 

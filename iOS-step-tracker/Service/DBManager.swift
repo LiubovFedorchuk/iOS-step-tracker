@@ -1,5 +1,5 @@
 //
-//  DAL.swift
+//  DBManager.swift
 //  iOS-step-tracker
 //
 //  Created by Liubov Fedorchuk on 10/9/18.
@@ -7,24 +7,22 @@
 //
 
 import Foundation
-//import FirebaseDatabase
 import Firebase
 
-class DAL {
+class DBManager {
     
-    func tmp() {
+    func pasteDataToFirebaseDB(date: String, stepCount: Int, withCompletion completion: (() -> Void)? = nil) {
         var databaseReference: DatabaseReference!
-        var databaseHandle: DatabaseHandle!
-        databaseReference = Database.database().reference()
-        //Writing data
-        let newActivity = ["date" : "2018-10-09",
-                           "step_count" :  1234,
-                           "user_name" : "Karoline Jones"] as [String : Any]
-//        databaseReference.child("data").setValue(newActivity)
-        //Reading data
-        databaseHandle = databaseReference.child("data/user_name").observe(.childAdded, with: {(data) in
-            let userName = (data.value as? String)!
-            print("\(userName)")
-        })
+
+        databaseReference = Database.database().reference().child("data")
+        let key = databaseReference.childByAutoId().key!
+        let newActivity = ["id" : key,
+                           "step_count" : stepCount,
+                           "date" : date] as [String : Any]
+        databaseReference.child(key).setValue(newActivity){ (error, _) in
+            if let completion = completion {
+                completion()
+            }
+        }
     }
 }
