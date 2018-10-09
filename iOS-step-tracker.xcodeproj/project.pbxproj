@@ -7,36 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DD44BF9C9B7B7E5CA8E9598 /* libPods-iOS-step-tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBE624CD79C3C4227821BE2 /* libPods-iOS-step-tracker.a */; };
+		0765B1E443C9FAD797EB4AF1 /* Pods_iOS_step_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D02B0DCF15FB322F4016980 /* Pods_iOS_step_tracker.framework */; };
 		F04210D6216665B800099CAF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04210D5216665B800099CAF /* HealthKit.framework */; };
 		F04210D821666B0D00099CAF /* HealthKitSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04210D721666B0D00099CAF /* HealthKitSetup.swift */; };
+		F048EF68216CACE400E16E3F /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048EF67216CACE400E16E3F /* DBManager.swift */; };
+		F07BB444216D00C200B1E914 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07BB443216D00C200B1E914 /* GradientView.swift */; };
 		F0A9F2C8216B8377006C973A /* AlertSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9F2C7216B8377006C973A /* AlertSetUp.swift */; };
+		F0A9F2D0216BC2D8006C973A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0A9F2CF216BC2D8006C973A /* GoogleService-Info.plist */; };
 		F0C6573A2165197D0003296A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C657392165197D0003296A /* AppDelegate.swift */; };
-		F0C6573C2165197D0003296A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6573B2165197D0003296A /* ViewController.swift */; };
+		F0C6573C2165197D0003296A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6573B2165197D0003296A /* MainViewController.swift */; };
 		F0C6573F2165197D0003296A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C6573D2165197D0003296A /* Main.storyboard */; };
 		F0C657412165197E0003296A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C657402165197E0003296A /* Assets.xcassets */; };
 		F0C657442165197E0003296A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C657422165197E0003296A /* LaunchScreen.storyboard */; };
-		F0F667B52165341F00B1689A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F667B42165341F00B1689A /* User.swift */; };
-		F0F667B7216543B700B1689A /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F667B6216543B700B1689A /* MotionManager.swift */; };
+		F0F667B7216543B700B1689A /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F667B6216543B700B1689A /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DB110FF9C63E431A17341B2 /* Pods-iOS-step-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-step-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-step-tracker/Pods-iOS-step-tracker.release.xcconfig"; sourceTree = "<group>"; };
-		5DBE624CD79C3C4227821BE2 /* libPods-iOS-step-tracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-step-tracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D02B0DCF15FB322F4016980 /* Pods_iOS_step_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_step_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C112E487EDFA7B127EF5268 /* Pods-iOS-step-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-step-tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-step-tracker/Pods-iOS-step-tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F04210D4216665B800099CAF /* iOS-step-tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-step-tracker.entitlements"; sourceTree = "<group>"; };
 		F04210D5216665B800099CAF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F04210D721666B0D00099CAF /* HealthKitSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetup.swift; sourceTree = "<group>"; };
+		F048EF67216CACE400E16E3F /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		F07BB443216D00C200B1E914 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F0A9F2C7216B8377006C973A /* AlertSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSetUp.swift; sourceTree = "<group>"; };
+		F0A9F2CF216BC2D8006C973A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0C657362165197D0003296A /* iOS-step-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-step-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C657392165197D0003296A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0C6573B2165197D0003296A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0C6573B2165197D0003296A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F0C6573E2165197D0003296A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0C657402165197E0003296A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C657432165197E0003296A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0C657452165197F0003296A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0F667B42165341F00B1689A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F0F667B6216543B700B1689A /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		F0F667B6216543B700B1689A /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD44BF9C9B7B7E5CA8E9598 /* libPods-iOS-step-tracker.a in Frameworks */,
 				F04210D6216665B800099CAF /* HealthKit.framework in Frameworks */,
+				0765B1E443C9FAD797EB4AF1 /* Pods_iOS_step_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F04210D5216665B800099CAF /* HealthKit.framework */,
-				5DBE624CD79C3C4227821BE2 /* libPods-iOS-step-tracker.a */,
+				5D02B0DCF15FB322F4016980 /* Pods_iOS_step_tracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,9 +95,9 @@
 		F0C657382165197D0003296A /* iOS-step-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F0A9F2CF216BC2D8006C973A /* GoogleService-Info.plist */,
 				F04210D4216665B800099CAF /* iOS-step-tracker.entitlements */,
 				F0C657452165197F0003296A /* Info.plist */,
-				F0F667B3216533FF00B1689A /* Model */,
 				F0F667B22165329F00B1689A /* Service */,
 				F0F667B121652BB000B1689A /* Utility */,
 				F0F667B021652B9900B1689A /* Controller */,
@@ -114,8 +118,9 @@
 		F0F667B021652B9900B1689A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F07BB443216D00C200B1E914 /* GradientView.swift */,
 				F0A9F2C7216B8377006C973A /* AlertSetUp.swift */,
-				F0C6573B2165197D0003296A /* ViewController.swift */,
+				F0C6573B2165197D0003296A /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,18 +137,11 @@
 		F0F667B22165329F00B1689A /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F0F667B6216543B700B1689A /* MotionManager.swift */,
+				F0F667B6216543B700B1689A /* HealthKitManager.swift */,
 				F04210D721666B0D00099CAF /* HealthKitSetup.swift */,
+				F048EF67216CACE400E16E3F /* DBManager.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		F0F667B3216533FF00B1689A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F0F667B42165341F00B1689A /* User.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +155,7 @@
 				F0C657322165197D0003296A /* Sources */,
 				F0C657332165197D0003296A /* Frameworks */,
 				F0C657342165197D0003296A /* Resources */,
+				067F7A9AD56F202256DA955C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +179,9 @@
 					F0C657352165197D0003296A = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
@@ -211,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C657442165197E0003296A /* LaunchScreen.storyboard in Resources */,
+				F0A9F2D0216BC2D8006C973A /* GoogleService-Info.plist in Resources */,
 				F0C657412165197E0003296A /* Assets.xcassets in Resources */,
 				F0C6573F2165197D0003296A /* Main.storyboard in Resources */,
 			);
@@ -219,6 +222,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		067F7A9AD56F202256DA955C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-step-tracker/Pods-iOS-step-tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-step-tracker/Pods-iOS-step-tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6445448EEEA42D259F4555A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,11 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C6573C2165197D0003296A /* ViewController.swift in Sources */,
+				F0C6573C2165197D0003296A /* MainViewController.swift in Sources */,
 				F0C6573A2165197D0003296A /* AppDelegate.swift in Sources */,
-				F0F667B52165341F00B1689A /* User.swift in Sources */,
-				F0F667B7216543B700B1689A /* MotionManager.swift in Sources */,
+				F0F667B7216543B700B1689A /* HealthKitManager.swift in Sources */,
+				F048EF68216CACE400E16E3F /* DBManager.swift in Sources */,
 				F0A9F2C8216B8377006C973A /* AlertSetUp.swift in Sources */,
+				F07BB444216D00C200B1E914 /* GradientView.swift in Sources */,
 				F04210D821666B0D00099CAF /* HealthKitSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,10 @@ class HealthKitSetup {
         let healthKitTypesToRead: Set<HKObjectType> = [stepCount]
         HKHealthStore().requestAuthorization(toShare: nil,
                                              read: healthKitTypesToRead) { (success, error) in
-                                                completion(success, error)
+            DispatchQueue.main.async {
+                HealthKitManager.sharedHealthKitManager.enableBackgroundDelivery()
+                completion(success, error)
+            }
         }
     }
 }

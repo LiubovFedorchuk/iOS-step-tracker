@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyBeaver
+import Firebase
 
 public let log = SwiftyBeaver.self
 
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         // log to Xcode Console
         let console = ConsoleDestination();
         console.format = "$DHH:mm:ss.SSS$d $C$L$c $N.$F:$l - $M";

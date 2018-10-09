@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var stepsCountLabel: UILabel!
     let alertSetUp = AlertSetUp()
+//    var stepCount = 0
+//    var date = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,9 @@ class ViewController: UIViewController {
             self.authorizeHealthKitWithStepCount()
         } else {
             self.getStepCount()
+//            self.showDataOnView(currentStepCount: self.getStepCount().0,
+//                                currentDate: self.getStepCount().1)
+//            self.saveDataToDB()
         }
     }
 
@@ -45,10 +51,13 @@ class ViewController: UIViewController {
         }
     }
     
-    func getStepCount() {
+    func getStepCount(){
         let motionManager = MotionManager()
-        motionManager.importStepsHistory(completion: { [weak self] steps in
+        motionManager.importStepsHistory(completion: { [weak self] steps, date  in
+            let dbManager = DBManager()
+            dbManager.pasteDataToFirebaseDB(date: date, stepCount: steps)
             self?.stepsCountLabel.text = "\(steps)"
+            self?.dateLabel.text = "\(date)"
         })
     }
 }
