@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMotionUsageDescription</key>
+	<string>This is a step counter, and we’d like to track your motion.</string>
 	<key>Required Background Mode</key>
 	<array>
 		<string>App using background mode for sending data to database</string>
